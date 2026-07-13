@@ -3,3 +3,6 @@ target/**
 
 # IDE files
 .vscode/**
+
+# Report files
+report/build/**
