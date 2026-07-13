@@ -5,17 +5,17 @@ start
 
 :Detect PR event (pull_request opened/reopened/synchronize);
 :Trigger GitHub Actions workflow;
-:Checkout PR head (source) revision;
+:Checkout repository workspace (base context);
 :Build and execute RAMA;
 :Look for `rama.json` configuration file;
 
-if (Is `rama.json` missing/empty/invalid?) then (yes)
-  :Display warning about configuration;
-  :Use default configuration;
-else (no)
+if (Is `rama.json` usable?) then (yes)
   :Parse configuration;
   :Set model/metamodel extensions
    and metamodel resolution rules;
+else (no)
+  :Display configuration warning in report;
+  :Use default configuration;
 endif
 
 :Fetch PR file list and changed paths from GitHub API;
