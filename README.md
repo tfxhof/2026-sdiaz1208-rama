@@ -1,5 +1,15 @@
 # RAMA - Request Augmentation for Model Awareness
 
+---
+
+## Metadatos TfxHoF
+
+- Autor: [Samuel Díaz Aja](https://www.linkedin.com/in/samuel-d%C3%ADaz-592a7a2b5/)
+- Título: [Enriquecimiento automático de las revisiones de código en proyectos software con desarrollo dirigido por modelos]()
+- Fecha: Julio 2026
+
+---
+
 Automated analysis of model and metamodel changes in GitHub Pull Requests.
 
 This project provides a **GitHub Actions-based toolchain** that detects, analyzes, and reports changes in software metamodels and models (e.g., `.ecore`, `.model`, or custom extensions) using **EMF Compare**, directly inside PRs.
